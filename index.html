@@ -1,12 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotel Management System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #2d72d9; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #f4f4f4; padding: 10px; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; }
+        section { padding: 20px; }
+        .room { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
+        footer { background-color: #2d72d9; color: white; text-align: center; padding: 10px; }
+    </style>
 </head>
 <body>
-    <h1></h1>
-    
+
+    <header>
+        <h1>Welcome to Rohit's Hotel</h1>
+    </header>
+
+    <nav>
+        <a href="#rooms">Rooms</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="rooms">
+        <h2>Available Rooms</h2>
+        <div class="room">
+            <h3>Single Room</h3>
+            <p>Price: ₹2500/night</p>
+        </div>
+        <div class="room">
+            <h3>Double Room</h3>
+            <p>Price: ₹3500/night</p>
+        </div>
+    </section>
+
+    <section id="reservation">
+        <h2>Book a Room</h2>
+        <form>
+            <label>Name:<br><input type="text" name="name" required></label><br><br>
+            <label>Contact:<br><input type="text" name="contact" required></label><br><br>
+            <label>Room Type:<br>
+                <select name="room_type">
+                    <option>Single</option>
+                    <option>Double</option>
+                </select>
+            </label><br><br>
+            <input type="submit" value="Book Now">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rohit's Hotel. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
+
+
